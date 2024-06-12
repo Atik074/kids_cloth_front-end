@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+ // image configuration in nextjs 
+
+const nextConfig = {
+    images:{
+        remotePatterns:[{
+            protocol:'https',
+            hostname:'**'
+        }]
+    }
+}
+
+module.exports = nextConfig 
